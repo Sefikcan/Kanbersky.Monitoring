@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{4C915C0D-6AFC-4CAA-B315-C99833E6E0D3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "composes", "composes", "{DB3F9C92-C29B-41DC-97D2-D102D86C5170}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yaml = docker-compose.yaml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrafanaAndPrometheus", "src\GrafanaAndPrometheus\GrafanaAndPrometheus.csproj", "{785713A3-87FC-48B9-A560-BC7D023E31F6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "prom", "prom", "{21E9E4D8-FF37-432D-B705-089352EF62D5}"
+	ProjectSection(SolutionItems) = preProject
+		prometheus.yml = prometheus.yml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785713A3-87FC-48B9-A560-BC7D023E31F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785713A3-87FC-48B9-A560-BC7D023E31F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785713A3-87FC-48B9-A560-BC7D023E31F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785713A3-87FC-48B9-A560-BC7D023E31F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{785713A3-87FC-48B9-A560-BC7D023E31F6} = {4C915C0D-6AFC-4CAA-B315-C99833E6E0D3}
+		{21E9E4D8-FF37-432D-B705-089352EF62D5} = {DB3F9C92-C29B-41DC-97D2-D102D86C5170}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A64009F6-84A4-43B4-ABFF-940F3B89A883}
+	EndGlobalSection
+EndGlobal

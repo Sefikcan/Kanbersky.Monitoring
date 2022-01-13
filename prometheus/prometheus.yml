@@ -2,6 +2,12 @@ global:
   scrape_interval: 30s # defines how often to check for new metric values.
   scrape_timeout: 10s  # If a scrape takes longer than scrape_timeout (e.g. slow network), Prometheus will cancel the scrape.
 
+alerting:
+  alertmanagers:
+    - scheme: http
+      static_configs:
+        - targets: ['alertmanager:9093']
+
 rule_files: # tells Prometheus where to search for the alert rules
   - alert.yml
 

@@ -1,10 +1,11 @@
-route:
+# This configuration contains information about which channels to send to
+route:  # configures which alerts will be sent.
   receiver: 'mail'
   repeat_interval: 4h
   group_by: [ alertname ]
 
 
-receivers:
+receivers: # configures our target channels
   - name: 'mail'
     email_configs:
       - smarthost: 'smtp.gmail.com:465'

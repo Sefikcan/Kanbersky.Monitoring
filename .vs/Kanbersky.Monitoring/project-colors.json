@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "785713a3-87fc-48b9-a560-bc7d023e31f6": {
+      "ProjectGuid": "785713a3-87fc-48b9-a560-bc7d023e31f6",
+      "DisplayName": "GrafanaAndPrometheus",
+      "ColorIndex": 0
+    },
+    "db3f9c92-c29b-41dc-97d2-d102d86c5170": {
+      "ProjectGuid": "db3f9c92-c29b-41dc-97d2-d102d86c5170",
+      "DisplayName": "composes",
+      "ColorIndex": 1
+    },
+    "21e9e4d8-ff37-432d-b705-089352ef62d5": {
+      "ProjectGuid": "21e9e4d8-ff37-432d-b705-089352ef62d5",
+      "DisplayName": "prom",
+      "ColorIndex": 2
+    },
+    "8195fb7b-9576-485b-b6b1-6919d227d0bd": {
+      "ProjectGuid": "8195fb7b-9576-485b-b6b1-6919d227d0bd",
+      "DisplayName": "GrafanaAndAppMetric",
+      "ColorIndex": 3
+    },
+    "c67b50d6-c3cd-43a8-adbc-2d97f0e580e6": {
+      "ProjectGuid": "c67b50d6-c3cd-43a8-adbc-2d97f0e580e6",
+      "DisplayName": "AppMetrics",
+      "ColorIndex": 4
+    },
+    "32dc833c-6ebc-4b29-bf5b-b49c487488e1": {
+      "ProjectGuid": "32dc833c-6ebc-4b29-bf5b-b49c487488e1",
+      "DisplayName": "server",
+      "ColorIndex": 5
+    }
+  },
+  "NextColorIndex": 6
+}

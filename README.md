@@ -30,9 +30,9 @@ datasources:
   isDefault: true
 ```
 
-
-# TODO: keep adding notes
-
+- The Alertmanager sends alerts to various channels like Slack or E-Mail.
+- You can use the Alertmanager to silence and group alerts as well.
+- 
 
 # TODO:
 - Slack integration

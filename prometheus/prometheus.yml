@@ -1,20 +1,36 @@
 global:
-  scrape_interval: 30s # defines how often to check for new metric values.
-  scrape_timeout: 10s  # If a scrape takes longer than scrape_timeout (e.g. slow network), Prometheus will cancel the scrape.
+  # How frequently to scrape targets
+  scrape_interval:     10s
+  # How frequently to evaluate rules
+  evaluation_interval: 10s
 
-alerting:
-  alertmanagers:
-    - scheme: http
-      static_configs:
-        - targets: ['alertmanager:9093']
-
-rule_files: # tells Prometheus where to search for the alert rules
+# Rules and alerts are read from the specified file(s)
+rule_files:
   - alert.yml
 
-scrape_configs: 
-  - job_name: prometheusservices
-    metrics_path: /metrics
+# Alerting specifies settings related to the Alertmanager
+alerting:
+  alertmanagers:
+    - static_configs:
+      - targets:
+        # Alertmanager's default port is 9093
+        - alertmanager:9093
+
+# A list of scrape configurations that specifies a set of
+# targets and parameters describing how to scrape them.
+scrape_configs:
+  - job_name: 'prometheus'
+    scrape_interval: 5s
     static_configs:
       - targets:
-        - "prometheus:9090"
-        - "idonotexists:564"
+        - prometheus:9090
+  - job_name: 'node_exporter'
+    scrape_interval: 5s
+    static_configs:
+      - targets:
+        - node_exporter:9100
+  - job_name: 'prom_middleware'
+    scrape_interval: 5s
+    static_configs:
+      - targets:
+        - prom_middleware:9091

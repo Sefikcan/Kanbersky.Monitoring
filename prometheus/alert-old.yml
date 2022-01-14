@@ -1,0 +1,7 @@
+# This file contains rules which Prometheus evaluates periodically.
+groups:
+  - name: PrometheusAlert
+    rules: 
+      - alert: InstanceDown
+        expr: up{job="prometheusservices"} < 1 # up is a built-in metric from Prometheus. It returns zero if the services were not reachable in the last scrape.
+        for: 5m

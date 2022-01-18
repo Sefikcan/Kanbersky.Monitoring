@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "LQapCAQ/CNvPa5EGMV7hXIkHTTJX/d2rQo5G4mJ7SgVyfFi9xnz3bG4CwaeDA6Agfn3ucrhjc7LgJPpuwIbl2g==",
+  "dgSpecHash": "Nha76nlNk69QdeB5B1gUZI0lprA6m25FguWoTZVRrLTxflBWTk+ipfqw77JKlI01t2EGIf6Bep6+ztmMvK8HMQ==",
   "success": true,
   "projectFilePath": "D:\\WorkSpaces\\Back-end\\Other\\Kanbersky.Monitoring\\src\\GrafanaAndPrometheus\\GrafanaAndPrometheus.csproj",
   "expectedPackageFiles": [
@@ -16,6 +16,7 @@
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.options\\3.1.9\\microsoft.extensions.options.3.1.9.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.9\\microsoft.extensions.primitives.3.1.9.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.14.0\\microsoft.visualstudio.azure.containers.tools.targets.1.14.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\prometheus-net\\5.0.2\\prometheus-net.5.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\prometheus-net.aspnetcore\\5.0.2\\prometheus-net.aspnetcore.5.0.2.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",

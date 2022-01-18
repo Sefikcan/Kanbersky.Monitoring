@@ -1,6 +1,17 @@
 version: '3'
 
 services:
+  kanbersky.monitoring:
+    container_name: kanbersky.monitoring
+    image: ${DOCKER_REGISTRY-}kanberskymonitoring
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "8085:80"
+    build:
+      context: .
+      dockerfile: src/GrafanaAndPrometheus/Dockerfile
+  
   prometheus:
     image: prom/prometheus:v2.21.0
     ports:

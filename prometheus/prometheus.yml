@@ -34,3 +34,7 @@ scrape_configs:
     static_configs:
       - targets:
         - prom_middleware:9091
+  - job_name: 'kanbersky.monitoring'
+    static_configs:
+      - targets:
+          - "host.docker.internal:8085"

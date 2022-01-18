@@ -1,6 +1,6 @@
 global:
   resolve_timeout: 1m
-  slack_api_url: 'https://hooks.slack.com/services/T0135UVP1PY/B02UH609ZHP/xxx'
+  slack_api_url: 'https://hooks.slack.com/services/T0135UVP1PY/B02UV62DF41/xxx'
 
 route:
   receiver: 'slack-notifications'
@@ -8,7 +8,7 @@ route:
 receivers:
 - name: 'slack-notifications'
   slack_configs:
-  - channel: '#monitoring-instances'
+  - channel: '#metrics'
     send_resolved: true
     icon_url: https://avatars3.githubusercontent.com/u/3380462
     title: |-

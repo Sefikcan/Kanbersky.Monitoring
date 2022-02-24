@@ -1,0 +1,30 @@
+﻿
+name: kanbersky-monitoring CD
+
+on:
+ push:
+  branches: [ main ]
+ pull_request:
+  branches: [ main ]
+
+#set env value
+env:
+ HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+ APP_NAME: ${{ 'kanbersky-monitoring' }}
+
+jobs:
+ deploy:
+  name: Deploy to Heroku
+  runs-on: ubuntu-18.04
+  steps:
+   # Clone Repository
+   - name: Checkout
+     uses: actions/checkout@v2
+   # Build Docker Image
+   - name: Docker build
+     run: docker login --username=_ --pasword=$HEROKU_API_KEY registry.heroku.com
+   # Push the Docker Image to Heroku Registry
+   - name: Publish
+     run: |
+      heroku container:push web -a $APP_NAME
+      heroku container:release web -a $APP_NAME
